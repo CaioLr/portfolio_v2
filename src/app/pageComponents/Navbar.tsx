@@ -1,18 +1,19 @@
 import React from 'react'
+import Line from '../Components/Line'
 
 const Navbar = () => {
   return (
     <div className='fixed top-0 w-full h-screen'>
 
         {/* WEB */}
-        <div className='hidden lg:flex w-full h-[10%] bg-white items-center'>
+        <div className='hidden lg:flex w-full h-[10%] bg-white items-center '>
 
             <div className='flex w-[60%] justify-evenly ml-20'>
 
-                <p className='font-mono text-2xl uppercase'>Home</p>
-                <p className='font-mono text-2xl uppercase'>Sobre</p>
-                <p className='font-mono text-2xl uppercase'>Projetos</p>
-                <p className='font-mono text-2xl uppercase'>Contato</p>
+                <p className='font-sans text-xl uppercase'>Home</p>
+                <p className='font-sans text-xl uppercase'>Sobre</p>
+                <p className='font-sans text-xl uppercase'>Projetos</p>
+                <p className='font-sans text-xl uppercase'>Contato</p>
 
             </div>
 
@@ -33,12 +34,12 @@ const Navbar = () => {
 
         </div>
 
-        <div className='flex w-full h-0.5 justify-center'>
-        <div className='w-full h-full bg-gray-300'></div>
-        </div>
-        
+             
 
         {/* MOBILE */}
+
+
+        <Line></Line>
 
     </div>
   )
