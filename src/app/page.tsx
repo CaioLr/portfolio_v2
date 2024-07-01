@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { Main } from "next/document";
-import Hero from "./Hero";
+import Hero from "./pages/Hero";
 
 export default function Home() {
+
   return (
     <>
     <Hero></Hero>

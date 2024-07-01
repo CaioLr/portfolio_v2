@@ -1,12 +1,13 @@
 import React from 'react'
 import Line from '../Components/Line'
+import ThemeButton from '../Components/ThemeButton'
 
 const Navbar = () => {
   return (
-    <div className='fixed top-0 w-full h-screen'>
+    <div className='fixed top-0 w-full h-[70px] bg-white dark:bg-stone-900 z-10'>
 
         {/* WEB */}
-        <div className='hidden lg:flex w-full h-[10%] bg-white items-center '>
+        <div className='hidden lg:flex w-full h-full items-center'>
 
             <div className='flex w-[60%] justify-evenly ml-20'>
 
@@ -27,7 +28,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='flex w-[20%] justify-end mr-20'>
-                    Button
+                    <ThemeButton></ThemeButton>
                 </div>
 
             </div> 
@@ -37,7 +38,24 @@ const Navbar = () => {
              
 
         {/* MOBILE */}
+        <div className='flex lg:hidden w-full h-full items-center '>
 
+            <div className='flex w-[100%]'>
+                <div className='flex flex-row w-[80%] justify-start'>
+                    <p className='mx-2 text-sm'>english</p>
+                    <p className='mr-2 text-sm'>/</p>
+                    <p className='mr-2 text-sm'>espanol</p>
+                    <p className='mr-2 text-sm'>/</p>
+                    <p className='text-sm'>português</p>
+                </div>
+
+                <div className='flex w-[20%] justify-end mr-2'>
+                    <ThemeButton></ThemeButton>
+                </div>
+
+            </div> 
+
+        </div>
 
         <Line></Line>
 
