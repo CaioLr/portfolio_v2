@@ -1,7 +1,23 @@
 import React from 'react'
 import Line from '../Components/Line'
 
-const Start = () => {
+const Start = (props: any) => {
+
+  const texts:any = {
+    "Portuguese":{
+      "text1":"Olá, eu sou o Caio",
+      "text2":"Clique na imagem para me conhecer de forma interativa."
+    },
+    "English":{
+      "text1":"Hi, I'm Caio",
+      "text2":"Click on the image to get to know me interactively."
+    },
+    "Spanish":{
+      "text1":"Hola, yo soy Caio",
+      "text2":"Haz clic en la imagen para conocerme de manera interactiva."
+    }
+  }
+
   return (
     <>
     <div id='start' className='flex h-screen w-full justify-center'>
@@ -14,8 +30,8 @@ const Start = () => {
       <div className='flex w-full h-[25%] items-center'>
 
         <div className='flex flex-col w-full'>
-        <p className='text-center text-2xl mb-4 text-textPrimary'>Olá, eu sou o Caio</p>
-        <p className='text-center text-xl text-textInfo'>Clique na imagem para me conhecer de forma interativa.</p>
+        <p className='text-center text-2xl mb-4'>{texts[props.language]['text1']}</p>
+        <p className='text-center text-xl text-cyan-600 dark:text-cyan-200 '>{texts[props.language]['text2']}</p>
         </div>
 
       </div>
@@ -37,8 +53,8 @@ const Start = () => {
       <div className='flex w-full h-[25%] items-center'>
 
         <div className='flex flex-col w-full'>
-        <p className='text-center text-xl mb-4 text-primary'>Olá, eu sou o Caio</p>
-        <p className='text-center text-lg text-cyan-600 text-info'>Clique na imagem para me conhecer de forma interativa.</p>
+        <p className='text-center text-xl mb-4 '>Olá, eu so o Caio</p>
+        <p className='text-center text-lg text-cyan-600'>Clique na imagem para me conhecer de forma interativa.</p>
         </div>
 
       </div>
@@ -47,10 +63,10 @@ const Start = () => {
 
           <img className="relative h-[100%] object-scale-down hover:scale-105 transform transition duration-500" src="well.gif" alt=""/>
 
-    </div>
+      </div>
 
-<Line></Line>
-</div>
+    <Line></Line>
+    </div>
     
     </div>
     </>
