@@ -45,13 +45,13 @@ const Navbar = (props: any) => {
             <div className='flex w-[40%]'>
                 <div className='flex flex-row w-[80%] justify-end'>
                     <button className="hover:underline decoration-2" onClick={() => props.setLanguage("English")}>english</button>
-                    <p className='mx-2'>/</p>
+                    <div className='mx-2'>/</div>
                     <button className="hover:underline decoration-2" onClick={() => props.setLanguage("Spanish")}>español</button>
-                    <p className='mx-2'>/</p>
+                    <div className='mx-2'>/</div>
                     <button className="hover:underline decoration-2" onClick={() => props.setLanguage("Portuguese")}>português</button>
                 </div>
 
-                <div className='flex w-[20%] justify-end mr-20'>
+                <div className='flex w-[20%] justify-end items-center mr-20'>
                     <ThemeButton></ThemeButton>
                 </div>
 

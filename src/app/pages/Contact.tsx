@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = (props: any) => {
 
-  const texts = {
+  const texts:any = {
     "Portuguese":{
     },
     "English":{

@@ -3,7 +3,7 @@ import Line from '../Components/Line'
 
 const Projects = (props: any) => {
 
-  const texts = {
+  const texts:any = {
     "Portuguese":{
     },
     "English":{
