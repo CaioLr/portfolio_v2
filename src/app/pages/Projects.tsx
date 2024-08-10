@@ -1,14 +1,19 @@
 import React from 'react'
 import Line from '../Components/Line'
+import ProjectsBox from '../Components/ProjectsBox'
 
 const Projects = (props: any) => {
 
+  
   const texts:any = {
     "Portuguese":{
+      "title":"Projetos",
     },
     "English":{
+      "title":"Projects",
     },
     "Spanish":{
+      "title":"Proyectos",
     }
   }
 
@@ -19,7 +24,17 @@ const Projects = (props: any) => {
     {/* WEB */}
     <div className='hidden lg:flex flex-col h-screen w-[70%]'>
 
-      <div className='w-full h-full'></div>
+      <div className='w-full h-full'>
+
+      <div className="flex flex-col h-full w-full justify-center items-center mb-6 mt-10">
+
+        <p className='text-4xl mb-8 uppercase'>{texts[props.language]['title']}</p>
+
+        <div className='w-full h-[65%]'><ProjectsBox></ProjectsBox></div>
+
+      </div>
+
+      </div>
 
       <Line></Line>
     </div>

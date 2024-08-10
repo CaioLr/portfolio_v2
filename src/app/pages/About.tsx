@@ -14,7 +14,7 @@ const About = (props: any) => {
       
     },
     "English":{
-      "text1":"I love programming because it's my main way to express my creativity. I've been in this world for over five years now.",
+      "text1":"I love programming because it's my main way to express my creativity. I've been in this world for over five years.",
       "text2":"Initially, I identified PHP as my primary backend tool. As I delved into the world of web programming, I broadened my horizons and honed my skills in JavaScript, Node.js, Python, C#, React, among other essential technologies in this constantly evolving field. Additionally, I have worked on Machine Learning projects and am an enthusiast of Game Development.",
       "text3":"Currently, I work as a Technical Support Engineer at Simetrik. My future goals include, in addition to professional development, setting aside time to improve the personal skills I desire. Thus, I am increasingly specializing in the field of AI, towards which I am directing my studies.",
       "title1":"My jorney",
@@ -37,17 +37,17 @@ const About = (props: any) => {
 
     {/* WEB */}
     <div className='hidden lg:flex flex-col h-screen w-[70%]'>
-      <div className='w-full h-full'>
+      <div className='flex flex-col w-full h-full justify-center'>
 
-        <div className="flex justify-start mb-6 mt-10 px-20">
+        <div className="flex justify-start mb-4 mt-10 px-20">
               <img className="object-cover w-[180px] h-[180px] self-center mb-6 rounded" src="about/fotocaio.jpg" alt=""/>
               <div>
                 <p className="text-4xl mb-6 pl-6 pt-8">Caio Ramos</p >
-                <p className="text-base mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
+                <p className="text-lg mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
               </div>
         </div>
 
-        <div className='flex flex-row my-6 px-20 justify-evenly'>
+        <div className='flex flex-row my-4 px-20 justify-evenly'>
             <div className='flex flex-col w-full justify-start mr-8'>
               <p className='text-xl uppercase mb-4'>{texts[props.language]['title1']}</p>
               <p className='text-base text-justify'>{texts[props.language]['text2']}</p>
@@ -58,9 +58,9 @@ const About = (props: any) => {
             </div>
         </div>
 
-        <div className='flex flex-col mb-6 mt-12 px-20'>
+        <div className='flex flex-col  mb-5 mt-12 px-20'>
           <p className='text-xl uppercase mb-6'>{texts[props.language]['title3']}</p>
-          <div className='flex flex-row'>
+          <div className='flex flex-wrap mb-4'>
 
             <img className='mr-4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width="40" height="40"/>
             <img className='mr-4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="40" height="40"/>
