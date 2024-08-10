@@ -51,9 +51,9 @@ const Navbar = (props: any) => {
                     <button className="hover:underline decoration-2" onClick={() => props.setLanguage("Portuguese")}>português</button>
                 </div>
 
-                <div className='flex w-[20%] justify-end items-center mr-20'>
+                {/* <div className='flex w-[20%] justify-end items-center mr-20'>
                     <ThemeButton></ThemeButton>
-                </div>
+                </div> */}
 
             </div> 
 
