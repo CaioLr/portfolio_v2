@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProjectsBox = () => {
   return (
-    <div className='bg-red-800 w-full h-full'>
+    <div className='bg-gray-900 w-full h-full'>
       
     </div>
   )

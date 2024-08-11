@@ -42,7 +42,6 @@ const Start = (props: any) => {
 
       </div>
 
-      <Line></Line>
     </div>
 
     {/* MOBILE */}
@@ -65,7 +64,7 @@ const Start = (props: any) => {
 
       </div>
 
-    <Line></Line>
+ 
     </div>
     
     </div>

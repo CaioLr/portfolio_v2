@@ -36,30 +36,30 @@ const About = (props: any) => {
     <div id='about' className='flex h-screen w-full justify-center'>
 
     {/* WEB */}
-    <div className='hidden lg:flex flex-col h-screen w-[70%]'>
-      <div className='flex flex-col w-full h-full justify-center'>
+    <div className='hidden lg:flex flex-col h-screen w-full bg-zinc-800 items-center'>
+      <div className='flex flex-col w-[70%] h-full justify-center '>
 
         <div className="flex justify-start mb-4 mt-10 px-20">
               <img className="object-cover w-[180px] h-[180px] self-center mb-6 rounded" src="about/fotocaio.jpg" alt=""/>
               <div>
-                <p className="text-4xl mb-6 pl-6 pt-8">Caio Ramos</p >
-                <p className="text-lg mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
+                <p className="text-4xl text-white mb-6 pl-6 pt-8">Caio Ramos</p >
+                <p className="text-lg  text-white mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
               </div>
         </div>
 
         <div className='flex flex-row my-4 px-20 justify-evenly'>
             <div className='flex flex-col w-full justify-start mr-8'>
-              <p className='text-xl uppercase mb-4'>{texts[props.language]['title1']}</p>
-              <p className='text-base text-justify'>{texts[props.language]['text2']}</p>
+              <p className='text-xl text-white uppercase mb-4'>{texts[props.language]['title1']}</p>
+              <p className='text-base text-white text-justify'>{texts[props.language]['text2']}</p>
             </div>
             <div className='flex flex-col w-full justify-start'>
-              <p className='text-xl uppercase mb-4'>{texts[props.language]['title2']}</p>
-              <p className='text-base text-justify'>{texts[props.language]['text3']}</p>
+              <p className='text-xl text-white uppercase mb-4'>{texts[props.language]['title2']}</p>
+              <p className='text-base text-white text-justify'>{texts[props.language]['text3']}</p>
             </div>
         </div>
 
         <div className='flex flex-col  mb-5 mt-12 px-20'>
-          <p className='text-xl uppercase mb-6'>{texts[props.language]['title3']}</p>
+          <p className='text-xl text-white uppercase mb-6'>{texts[props.language]['title3']}</p>
           <div className='flex flex-wrap mb-4'>
 
             <img className='mr-4' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" width="40" height="40"/>
@@ -81,12 +81,12 @@ const About = (props: any) => {
         </div>
 
       </div>
-      <Line></Line>
+ 
     </div>
 
     {/* MOBILE */}
     <div className='flex lg:hidden flex-col h-screen w-[90%]'>
-    <div className='w-full h-full'>
+    <div className='flex flex-col w-full h-full justify-center'>
 
         <div className="flex flex-col justify-start mb-4 mt-6 px-0">
             <div className='flex flex-row'>
@@ -136,7 +136,7 @@ const About = (props: any) => {
 
         </div>
 
-    <Line></Line>
+
     </div>
 
     </div>
