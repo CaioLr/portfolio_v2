@@ -136,7 +136,7 @@ const About = (props: any) => {
 
         </div>
 
-
+        <Line></Line>
     </div>
 
     </div>

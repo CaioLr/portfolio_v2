@@ -6,6 +6,7 @@ import About from './About'
 import Projects from './Projects'
 import Contact from './Contact'
 import { useState } from 'react'
+import Footer from './Footer'
 
 
 const Hero = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
         <About setLanguage={setLanguage} language={language}></About>
         <Projects setLanguage={setLanguage} language={language}></Projects>
         <Contact setLanguage={setLanguage} language={language}></Contact>
-
+        <Footer></Footer>
     </div>
   )
 }
