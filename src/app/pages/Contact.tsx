@@ -8,12 +8,18 @@ const Contact = (props: any) => {
   const texts:any= {
     "Portuguese":{
         "title":"Contato",
+        "text1":"Saiba mais sobre a minha carreira profissional e entre em contato comigo!",
+        "text2":"Explore meus códigos, projetos pessoais e os desafios que já realizei."
     },
     "English":{
         "title":"Contact",
+        "text1":"Learn more about my professional journey and get in touch with me!",
+        "text2":"Explore my code, personal projects, and the challenges I've tackled."
     },
     "Spanish":{
-      "title":"Contacto"
+      "title":"Contacto",
+      "text1":"Descubre más sobre mi trayectoria profesional y ponte en contacto conmigo.",
+      "text2":"Explora mis códigos, proyectos personales y los desafíos que he enfrentado."
     }
   }
 
@@ -27,20 +33,45 @@ const Contact = (props: any) => {
 
       <div className='flex flex-col w-full my-8 justify-center'>
 
-        <p className='text-4xl text-center my-8'>{texts[props.language]['title']}</p>
+        <p className='text-4xl text-center mt-8 mb-4'>{texts[props.language]['title']}</p>
 
-        <div className='flex flex-row w-full pl-24 mb-6 '>
+        <div className='flex flex-row w-full mb-14 justify-evenly'>
 
-          <a href="https://www.linkedin.com/in/caio-eduardo-ramos/" target='_blank' ><div className='flex flex-row items-center'>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" className="object-scale-down rounded-lg w-[40px] w-[30px]"/>
-            <p className= 'text-sm lg:text-base ml-2 mr-5'>LinkedIn</p>
-          </div></a>
+          
+          
+          <div className='flex my-10 mx-10 w-[50%] h-full'><a href="https://www.linkedin.com/in/caio-eduardo-ramos/" target='_blank' className='flex w-full h-full justify-end'>
 
-          <a href="https://github.com/CaioLr" target='_blank' ><div className='flex flex-row items-center'>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="object-scale-down rounded-lg w-[40px] w-[30px]"/>
-            <p className='text-sm lg:text-base ml-2 mr-5'>GitHub</p>
-          </div></a>
+          <div className='flex flex-row w-[80%] h-[90%] justify-center items-center border-2 rounded-lg hover:bg-slate-50'>
 
+            <div className='flex flex-col  items-center  ml-8'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" className="object-scale-down mb-2 rounded-lg w-[75px]"/>
+              <p className= 'text-sm lg:text-xl'>LinkedIn</p>
+            </div>
+
+            <p className='text-lg text-left ml-8 mr-2'>{texts[props.language]['text1']}</p>
+
+          </div>
+          
+          </a></div>
+        
+          
+          <div className='flex flex-rol my-10 mx-10 w-[50%] h-full'><a href="https://github.com/CaioLr" target='_blank' className='flex w-full h-full justify-start'>
+
+          <div className='flex flex-row w-[80%] h-[90%] justify-center items-center border-2 rounded-lg hover:bg-slate-50'>
+
+            <div className='flex flex-col items-center ml-8'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="object-scale-down mb-2 rounded-lg w-[75px]"/>
+              <p className='text-sm lg:text-2xl'>GitHub</p>
+            </div>
+
+            <p className='text-lg text-left ml-8 mr-2'>{texts[props.language]['text2']}</p>
+
+          </div>
+
+          </a></div>
+
+          
+          
         </div>
 
       </div>
