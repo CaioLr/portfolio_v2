@@ -42,21 +42,21 @@ const About = (props: any) => {
         <div className="flex justify-start mb-0 mt-10 px-20">
               <img className="object-cover w-[180px] h-[180px] self-center mb-6 rounded" src="about/fotocaio.jpg" alt=""/>
               <div>
-                <p className="text-4xl text-white mb-6 pl-6 pt-8">Caio Ramos</p >
-                <p className="text-lg  text-white mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
+                <p className="font-sans text-4xl text-white mb-6 pl-6 pt-8">Caio Ramos</p >
+                <p className="font-sans text-xl  text-white mb-6 pl-6 text-justify">{texts[props.language]['text1']}</p>
               </div>
         </div>
 
         <div className='flex flex-row my-2 px-20 justify-evenly'>
             <div className='flex flex-col w-full justify-start mr-8'>
-              <p className='text-xl text-white uppercase mb-4'>{texts[props.language]['title1']}</p>
-              <p className='text-base text-white text-justify'>{texts[props.language]['text2']}</p>
+              <p className='font-mono text-2xl text-gray-400 uppercase mb-4'>{texts[props.language]['title1']}</p>
+              <p className='font-sans text-lg text-white text-justify'>{texts[props.language]['text2']}</p>
             </div>
            
         </div>
 
         <div className='flex flex-col  mb-5 mt-10 px-20'>
-          <p className='text-xl text-white uppercase mb-6'>{texts[props.language]['title3']}</p>
+          <p className='font-mono text-2xl text-gray-400 uppercase mb-6'>{texts[props.language]['title3']}</p>
           <div className='flex flex-wrap mb-4'>
   
           <div className='py-4 px-4 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>

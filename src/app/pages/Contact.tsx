@@ -33,7 +33,7 @@ const Contact = (props: any) => {
 
       <div className='flex flex-col w-full my-8 justify-center'>
 
-        <p className='text-4xl text-center mt-8 mb-4'>{texts[props.language]['title']}</p>
+        <p className='font-mono text-4xl text-center mt-8 mb-4'>{texts[props.language]['title']}</p>
 
         <div className='flex flex-row w-full mb-14 justify-evenly'>
 

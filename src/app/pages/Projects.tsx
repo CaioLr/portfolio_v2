@@ -28,7 +28,7 @@ const Projects = (props: any) => {
 
       <div className="flex flex-col h-full w-full justify-center items-center mb-6 mt-10">
 
-        <p className='text-4xl mb-8 uppercase'>{texts[props.language]['title']}</p>
+        <p className='font-mono text-4xl mb-8'>{texts[props.language]['title']}</p>
 
         <div className='w-full h-[65%]'><ProjectsBox></ProjectsBox></div>
 
