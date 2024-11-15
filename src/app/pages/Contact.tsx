@@ -112,7 +112,7 @@ const Contact = (props: any) => {
                 <p className='text-sm lg:text-2xl'>GitHub</p>
               </div>
 
-              <p className='text-lg text-left ml-8 mr-2  mr-2 my-4'>{texts[props.language]['text2']}</p>
+              <p className='text-lg text-left ml-8 mr-2 my-4'>{texts[props.language]['text2']}</p>
 
             </div>
 

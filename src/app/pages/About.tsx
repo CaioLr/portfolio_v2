@@ -1,5 +1,4 @@
 import React from 'react'
-import Line from '../Components/Line'
 
 const About = (props: any) => {
 
@@ -36,8 +35,8 @@ const About = (props: any) => {
     <div id='about' className='flex w-full bg-zinc-800 justify-center'>
 
     {/* WEB */}
-    <div className='hidden lg:flex flex-col w-full bg-zinc-800 items-center'>
-      <div className='flex flex-col w-[70%] my-20 justify-center '>
+    <div className='hidden lg:flex flex-col h-screen w-full bg-zinc-800 items-center'>
+      <div className='flex flex-col h-screen w-[70%] justify-center '>
 
         <div className="flex justify-start mb-0 mt-10 px-20">
               <img className="object-cover w-[180px] h-[180px] self-center mb-6 rounded" src="about/fotocaio.jpg" alt=""/>
@@ -87,7 +86,7 @@ const About = (props: any) => {
 
     {/* MOBILE */}
     <div className='flex lg:hidden flex-col  w-[90%] bg-zinc-800 '>
-    <div className='flex flex-col w-full justify-center '>
+    <div className='flex flex-col w-full my-20 justify-center '>
 
         <div className="flex flex-col justify-start mb-4 mt-6 px-0">
             <div className='flex flex-row'>
