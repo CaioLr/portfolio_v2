@@ -1,5 +1,6 @@
 'use client'
 
+
 import Navbar from './Navbar'
 import Start from './Start'
 import About from './About'
@@ -17,10 +18,10 @@ const Hero = () => {
     <div className='bg-white dark:bg-stone-900'>
       
         <Navbar setLanguage={setLanguage} language={language}></Navbar>
-        <Start setLanguage={setLanguage} language={language}></Start>
-        <About setLanguage={setLanguage} language={language}></About>
-        <Projects setLanguage={setLanguage} language={language}></Projects>
-        <Contact setLanguage={setLanguage} language={language}></Contact>
+        <Start id='start' setLanguage={setLanguage} language={language}></Start>
+        <About id='about' setLanguage={setLanguage} language={language}></About>
+        <Projects id='projects' setLanguage={setLanguage} language={language}></Projects>
+        <Contact id='contact' setLanguage={setLanguage} language={language}></Contact>
         <Footer></Footer>
     </div>
   )

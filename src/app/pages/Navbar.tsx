@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Line from '../Components/Line'
 import ThemeButton from '../Components/ThemeButton'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
-const Navbar = (props: any) => {
+const Navbar  = (props: any) => {
 
     const texts:any = {
         "Portuguese":{
@@ -34,10 +35,18 @@ const Navbar = (props: any) => {
 
             <div className='flex w-[60%] justify-evenly ml-20'>
 
-                <p className='font-sans text-xl uppercase'>{texts[props.language]['home']}</p>
-                <p className='font-sans text-xl uppercase'>{texts[props.language]['about']}</p>
-                <p className='font-sans text-xl uppercase'>{texts[props.language]['projects']}</p>
-                <p className='font-sans text-xl uppercase'>{texts[props.language]['contact']}</p>
+                <Link to="start" spy={true} smooth={true} offset={50} duration={600} >
+                    <p className='font-sans text-xl uppercase'>{texts[props.language]['home']}</p>
+                </Link>
+                <Link to="about" spy={true} smooth={true} offset={50} duration={600} >
+                    <p className='font-sans text-xl uppercase'>{texts[props.language]['about']}</p>
+                </Link>
+                <Link to="projects" spy={true} smooth={true} offset={50} duration={600} >
+                    <p className='font-sans text-xl uppercase'>{texts[props.language]['projects']}</p>
+                </Link>
+                <Link to="contact" spy={true} smooth={true} offset={50} duration={600} >
+                    <p className='font-sans text-xl uppercase'>{texts[props.language]['contact']}</p>
+                </Link>
 
             </div>
 
