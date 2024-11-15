@@ -33,7 +33,7 @@ const About = (props: any) => {
 
   return (
     <>
-    <div id='about' className='flex h-screen w-full justify-center'>
+    <div id='about' className='flex h-screen w-full bg-zinc-800 justify-center'>
 
     {/* WEB */}
     <div className='hidden lg:flex flex-col h-screen w-full bg-zinc-800 items-center'>
@@ -86,43 +86,52 @@ const About = (props: any) => {
     </div>
 
     {/* MOBILE */}
-    <div className='flex lg:hidden flex-col h-screen w-[90%]'>
-    <div className='flex flex-col w-full h-full justify-center'>
+    <div className='flex lg:hidden flex-col h-screen w-[90%] bg-zinc-800 '>
+    <div className='flex flex-col w-full h-full justify-center '>
 
         <div className="flex flex-col justify-start mb-4 mt-6 px-0">
             <div className='flex flex-row'>
-              <img className="object-cover w-[100px] h-[100px] self-center mb-6 rounded-md" src="about/fotocaio.jpg" alt=""/>
+              <img className="object-cover w-[140px] h-[140px] self-center mb-6 rounded-md" src="about/fotocaio.jpg" alt=""/>
               <div className='mb-6 pl-4 pt-8'>
-                <p className="text-2xl">Caio</p >
-                <p className="text-2xl">Ramos</p >
+                <p className="text-4xl text-white">Caio</p >
+                <p className="text-4xl text-white">Ramos</p >
               </div>
             </div>
             <div>
-              <p className="text-xs text-justify">{texts[props.language]['text1']}</p>
+              <p className="text-sm text-justify text-white">{texts[props.language]['text1']}</p>
             </div>
         </div>
 
         <div className='flex flex-col my-4 px-0 justify-evenly'>
             <div className='flex flex-col w-full justify-start mr-8'>
-              <p className='text-base uppercase mb-2'>{texts[props.language]['title1']}</p>
-              <p className='text-xs text-justify'>{texts[props.language]['text2']}</p>
+              <p className='text-base text-gray-400 uppercase mb-2'>{texts[props.language]['title1']}</p>
+              <p className='text-sm text-white text-justify'>{texts[props.language]['text2']}</p>
             </div>
             
         </div>
 
         <div className='flex flex-col w-full mb-4 mt-6 px-0'>
-          <p className='text-base uppercase mb-6'>{texts[props.language]['title3']}</p>
+          <p className='text-base text-gray-400 uppercase mb-6'>{texts[props.language]['title3']}</p>
           <div className='flex flex-wrap w-full'>
 
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="25" height="25"/>
-            <img className='mr-4 mb-2' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="25" height="25"/>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" width="35" height="35"/></div>
+          <div className='py-2 px-2 mr-2 mb-2 border rounded-lg hover:bg-zinc-700'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" width="35" height="35"/></div>
 
 
           </div>
@@ -130,7 +139,6 @@ const About = (props: any) => {
 
         </div>
 
-        <Line></Line>
     </div>
 
     </div>

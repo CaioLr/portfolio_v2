@@ -79,7 +79,50 @@ const Contact = (props: any) => {
     </div>
 
     {/* MOBILE */}
-    <div className='flex lg:hidden flex-col h-screen w-[90%]'>
+    <div className='flex lg:hidden flex-col w-[90%]'>
+
+        <div className='flex flex-col w-full my-8 justify-center'>
+
+          <p className='font-mono text-4xl text-center mt-8 mb-4'>{texts[props.language]['title']}</p>
+
+          <div className='flex flex-col w-full mb-14 '>
+
+            <div className='flex my-10  w-full h-full'><a href="https://www.linkedin.com/in/caio-eduardo-ramos/" target='_blank' className='flex w-full h-full justify-center'>
+
+            <div className='flex flex-row w-[80%] h-[90%] justify-center items-center border-2 rounded-lg hover:bg-slate-50'>
+
+              <div className='flex flex-col  items-center  ml-8 my-4'>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" className="object-scale-down mb-2 rounded-lg w-[75px]"/>
+                <p className= 'text-sm lg:text-xl'>LinkedIn</p>
+              </div>
+
+              <p className='text-lg text-left ml-8 mr-2 my-4'>{texts[props.language]['text1']}</p>
+
+            </div>
+            
+            </a></div>
+
+            
+            <div className='flex my-10 w-full h-full'><a href="https://github.com/CaioLr" target='_blank' className='flex w-full h-full justify-center'>
+
+            <div className='flex flex-row w-[80%] h-[90%] justify-center items-center border-2 rounded-lg hover:bg-slate-50'>
+
+              <div className='flex flex-col items-center ml-8  mr-2 my-4'>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" className="object-scale-down mb-2 rounded-lg w-[75px]"/>
+                <p className='text-sm lg:text-2xl'>GitHub</p>
+              </div>
+
+              <p className='text-lg text-left ml-8 mr-2  mr-2 my-4'>{texts[props.language]['text2']}</p>
+
+            </div>
+
+            </a></div>
+
+            
+            
+          </div>
+
+          </div>
 
     </div>
 
